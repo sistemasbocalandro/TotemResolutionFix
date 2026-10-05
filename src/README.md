@@ -1,25 +1,15 @@
-# Turnos TV — Salud Bonaerense
+# Turnos TV — carpeta de la extensión
 
-Extensión local de Chrome que reorganiza la pantalla pública de turnos para aprovechar televisores y monitores 16:9.
+Esta carpeta contiene la extensión de Chrome **Turnos TV 1.2.0**. Agranda el último llamado y mantiene la lista de anteriores con un aspecto cercano al original.
 
-Versión actual: **1.0.2**.
+## Instalación
 
-## Qué cambia
+1. Abrí `chrome://extensions` y activá **Modo desarrollador**.
+2. Elegí **Cargar extensión sin empaquetar** y seleccioná esta carpeta `src`.
+3. Abrí `https://totem-shc.ms.gba.gov.ar/turnero-totem/turnos` y recargá la página.
 
-- Centra la información principal en una tarjeta de gran tamaño.
-- Destaca el número de turno con máxima legibilidad a distancia.
-- Ajusta automáticamente el tamaño del turno para que nunca desborde su recuadro.
-- Amplía la sala, el box, el logotipo y el reloj.
-- Conserva la animación y las actualizaciones en tiempo real de la página.
-- Incluye un interruptor en la barra de extensiones para volver al diseño original.
-- Solo se activa en `https://totem-shc.ms.gba.gov.ar/turnero-totem/turnos`.
+Para aplicar cambios en los archivos, recargá la extensión y después la página. El interruptor **Modo TV** permite volver temporalmente a la presentación original.
 
-## Instalación local
+El historial de tres llamados se mantiene en la memoria de la pestaña. Al recargar, empieza con la lista que entrega el sitio. Si dos llamados consecutivos tienen exactamente el mismo número, sala y box, la extensión no puede distinguirlos a partir de la pantalla.
 
-1. Abre `chrome://extensions` en Chrome.
-2. Activa **Modo desarrollador** arriba a la derecha.
-3. Pulsa **Cargar extensión sin empaquetar**.
-4. Selecciona esta carpeta: `turnos-tv-extension`.
-5. Regresa a la página de turnos y recárgala.
-
-Para desactivar temporalmente el rediseño, pulsa el icono de la extensión y apaga **Modo TV**.
+La documentación técnica y la explicación completa están en el [README principal](../README.md).

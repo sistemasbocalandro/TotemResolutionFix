@@ -6,6 +6,7 @@
 
 * { box-sizing: border-box; }
 
+/* Ventana pequeña que se abre al pulsar el icono de la extensión. */
 body {
   width: 330px;
   margin: 0;
@@ -13,6 +14,7 @@ body {
 
 main { padding: 20px; }
 
+/* Identidad visual del popup; no afecta a la pantalla de turnos. */
 .brand {
   display: flex;
   align-items: center;
@@ -47,6 +49,7 @@ h1 {
   line-height: 1.4;
 }
 
+/* Toda la tarjeta funciona como etiqueta del checkbox para facilitar el clic. */
 .control {
   position: relative;
   display: flex;
@@ -73,6 +76,7 @@ h1 {
   opacity: 0;
 }
 
+/* El checkbox sigue siendo accesible; la pista visible es este interruptor. */
 .switch {
   position: relative;
   width: 52px;
