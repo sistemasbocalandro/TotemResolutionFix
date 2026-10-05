@@ -1,0 +1,233 @@
+html.turnos-tv-enabled,
+html.turnos-tv-enabled body,
+html.turnos-tv-enabled [data-turnos-tv="root"] {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+html.turnos-tv-enabled {
+  color-scheme: light;
+  font-size: clamp(16px, 1vw, 24px);
+}
+
+html.turnos-tv-enabled body {
+  background: #e8f4f5;
+}
+
+/* Chakra agrega este script dentro de #root en algunos renderizados. Aunque
+   el sitio cambie su posición, nunca debe participar del diseño visual. */
+html.turnos-tv-enabled #root > script {
+  display: none !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="shell"] {
+  display: grid !important;
+  grid-template-rows: minmax(0, 1fr) clamp(112px, 15vh, 174px) !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  gap: 0 !important;
+  padding: 0 !important;
+  background:
+    radial-gradient(circle at 84% 12%, rgba(24, 181, 193, 0.18), transparent 28%),
+    linear-gradient(145deg, #f8fbfc 0%, #e6f2f3 54%, #d9eaec 100%) !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="stage"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: clamp(48px, 7vh, 88px) clamp(48px, 5vw, 112px) clamp(30px, 4vh, 56px) !important;
+  overflow: visible !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="card"] {
+  display: flex !important;
+  align-items: stretch !important;
+  width: min(100%, 1660px) !important;
+  height: auto !important;
+  min-height: clamp(360px, 52vh, 590px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  border: 1px solid rgba(7, 83, 94, 0.1) !important;
+  border-radius: clamp(26px, 2vw, 42px) !important;
+  background: rgba(255, 255, 255, 0.97) !important;
+  box-shadow: 0 28px 70px rgba(14, 57, 67, 0.18), 0 6px 18px rgba(14, 57, 67, 0.08) !important;
+  animation-duration: 1.8s !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="content"] {
+  display: grid !important;
+  grid-template-rows: auto minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="label"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: max-content !important;
+  min-width: clamp(310px, 25vw, 480px) !important;
+  min-height: clamp(68px, 8vh, 98px) !important;
+  margin: 0 auto !important;
+  padding: 12px 42px !important;
+  transform: translateY(-50%) !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(135deg, #eb1672 0%, #ca075c 100%) !important;
+  box-shadow: 0 12px 26px rgba(204, 8, 91, 0.28) !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="label"] p {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: clamp(25px, 2.1vw, 42px) !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.055em !important;
+  text-transform: uppercase !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="information"] {
+  display: grid !important;
+  grid-template-columns: minmax(340px, 0.8fr) minmax(520px, 1.55fr) !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: clamp(-20px, -2vh, -8px) 0 0 !important;
+  padding: clamp(30px, 4vh, 54px) clamp(54px, 5vw, 100px) clamp(50px, 6vh, 80px) !important;
+  gap: clamp(44px, 5vw, 96px) !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="turn"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: clamp(190px, 26vh, 300px) !important;
+  margin: 0 !important;
+  padding: 18px 26px !important;
+  border-radius: clamp(22px, 1.8vw, 36px) !important;
+  background: #0f5964 !important;
+  color: #fff !important;
+  font-size: var(--turnos-tv-turn-size, clamp(72px, 6.5vw, 132px)) !important;
+  font-weight: 900 !important;
+  line-height: 0.92 !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.08) !important;
+  box-shadow: inset 0 -8px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="details"] {
+  margin: 0 !important;
+  color: #142c35 !important;
+  font-size: clamp(31px, 3vw, 60px) !important;
+  font-weight: 750 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.025em !important;
+  text-wrap: balance !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="footer"] {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="footer-link"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 20px clamp(48px, 5vw, 96px) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: linear-gradient(110deg, #0f9fab 0%, #1bb8c2 70%, #27c5cc 100%) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  box-shadow: 0 -8px 30px rgba(5, 86, 96, 0.12) !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="footer-link"] > div {
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="logo"] {
+  width: auto !important;
+  height: clamp(62px, 8vh, 96px) !important;
+  max-width: clamp(250px, 22vw, 420px) !important;
+  object-fit: contain !important;
+}
+
+html.turnos-tv-enabled [data-turnos-tv="clock"] {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: clamp(38px, 4vw, 72px) !important;
+  font-variant-numeric: tabular-nums !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.015em !important;
+}
+
+@media (max-width: 1100px), (orientation: portrait) {
+  html.turnos-tv-enabled [data-turnos-tv="shell"] {
+    grid-template-rows: minmax(0, 1fr) clamp(92px, 12vh, 130px) !important;
+  }
+
+  html.turnos-tv-enabled [data-turnos-tv="stage"] {
+    padding: 58px 30px 30px !important;
+  }
+
+  html.turnos-tv-enabled [data-turnos-tv="card"] {
+    min-height: 0 !important;
+  }
+
+  html.turnos-tv-enabled [data-turnos-tv="information"] {
+    grid-template-columns: 1fr !important;
+    padding: 20px 34px 42px !important;
+    gap: 24px !important;
+  }
+
+  html.turnos-tv-enabled [data-turnos-tv="turn"] {
+    min-height: 170px !important;
+    font-size: var(--turnos-tv-turn-size, clamp(66px, 13vw, 132px)) !important;
+  }
+
+  html.turnos-tv-enabled [data-turnos-tv="details"] {
+    font-size: clamp(25px, 5vw, 44px) !important;
+    text-align: center !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.turnos-tv-enabled [data-turnos-tv="card"] {
+    animation: none !important;
+  }
+}

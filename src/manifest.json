@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Turnos TV — Salud Bonaerense",
+  "version": "1.0.2",
+  "description": "Optimiza la pantalla pública de turnos para televisores y monitores 16:9.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "Turnos TV",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://totem-shc.ms.gba.gov.ar/turnero-totem/turnos*"
+      ],
+      "css": [
+        "turnos-tv.css"
+      ],
+      "js": [
+        "turnos-tv.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

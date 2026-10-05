@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turnos TV</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">TV</span>
+        <div>
+          <h1>Turnos TV</h1>
+          <p>Vista optimizada para pantallas grandes</p>
+        </div>
+      </div>
+
+      <label class="control">
+        <span>
+          <strong>Modo TV</strong>
+          <small id="status">Activo</small>
+        </span>
+        <input id="enabled" type="checkbox" checked>
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+
+      <p class="hint">Funciona únicamente en la pantalla pública de turnos de Salud Bonaerense.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

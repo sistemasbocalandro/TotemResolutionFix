@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17343c;
+  background: #f2f8f8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 330px;
+  margin: 0;
+}
+
+main { padding: 20px; }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.brand__mark {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0f9fab, #23c3cb);
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  box-shadow: 0 8px 18px rgba(15, 159, 171, 0.24);
+}
+
+h1 {
+  margin: 0 0 2px;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.brand p,
+.hint {
+  margin: 0;
+  color: #63767c;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  padding: 14px 15px;
+  border: 1px solid #d7e6e7;
+  border-radius: 16px;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(19, 66, 73, 0.06);
+}
+
+.control strong,
+.control small { display: block; }
+.control strong { font-size: 15px; }
+.control small { margin-top: 3px; color: #0c8b96; font-size: 12px; font-weight: 700; }
+
+.control input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.switch {
+  position: relative;
+  width: 52px;
+  height: 30px;
+  border-radius: 99px;
+  background: #a9b9bc;
+  transition: background 160ms ease;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  transition: transform 160ms ease;
+}
+
+input:checked + .switch { background: #0fa6b2; }
+input:checked + .switch::after { transform: translateX(22px); }
+input:focus-visible + .switch { outline: 3px solid rgba(15, 166, 178, 0.28); outline-offset: 3px; }
+
+.hint { margin-top: 14px; text-align: center; }
